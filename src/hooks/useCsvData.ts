@@ -23,10 +23,11 @@ export function useCsvData<T = any>(filePath: string): CsvDataState<T> {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setState(prev => ({ ...prev, isLoading: true }));
+        setState(prev => ({ ...prev, isLoading: true, error: null }));
         const data = await loadCsvData(filePath);
         setState({ data: data as T[], isLoading: false, error: null });
       } catch (error) {
+        console.error("Error in useCsvData:", error);
         setState({ data: [], isLoading: false, error: error as Error });
       }
     };
