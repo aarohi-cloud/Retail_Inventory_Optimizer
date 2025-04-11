@@ -1,4 +1,3 @@
-
 // Mock data for the retail inventory system
 
 export const mockDemandForecastData = [
@@ -30,50 +29,62 @@ export const mockInventoryData = [
   {
     productId: "001",
     productName: "Laptop",
+    category: "Electronics",
     currentStock: 45,
     safetyStock: 20,
     maxStock: 100,
-    onOrder: 15
+    onOrder: 15,
+    status: "In Stock"
   },
   {
     productId: "002",
     productName: "Smartphone",
+    category: "Electronics",
     currentStock: 78,
     safetyStock: 30,
     maxStock: 150,
-    onOrder: 25
+    onOrder: 25,
+    status: "In Stock"
   },
   {
     productId: "003",
     productName: "Headphones",
+    category: "Electronics",
     currentStock: 23,
     safetyStock: 15,
     maxStock: 75,
-    onOrder: 10
+    onOrder: 10,
+    status: "In Stock"
   },
   {
     productId: "004",
     productName: "Monitor",
+    category: "Electronics",
     currentStock: 17,
-    safetyStock: 10,
+    safetyStock: 20,
     maxStock: 50,
-    onOrder: 20
+    onOrder: 20,
+    status: "Low Stock"
   },
   {
     productId: "005",
     productName: "Keyboard",
+    category: "Electronics",
     currentStock: 62,
     safetyStock: 25,
     maxStock: 100,
-    onOrder: 0
+    onOrder: 0,
+    status: "In Stock"
   },
   {
     productId: "006",
     productName: "Mouse",
-    currentStock: 89,
+    category: "Electronics",
+    currentStock: 0,
     safetyStock: 30,
     maxStock: 120,
-    onOrder: 0
+    onOrder: 50,
+    status: "Out of Stock"
   }
 ];
 
