@@ -6,6 +6,7 @@ import { AgentSystemVisualization } from "@/components/dashboard/AgentSystemVisu
 import { InventoryStatusChart } from "@/components/dashboard/InventoryStatusChart";
 import { AgentCommunication } from "@/components/dashboard/AgentCommunication";
 import { OptimizationControls } from "@/components/dashboard/OptimizationControls";
+import { CsvDataDisplay } from "@/components/dashboard/CsvDataDisplay";
 import { 
   ActivitySquare,
   RefreshCw,
@@ -64,6 +65,9 @@ const Index = () => {
             icon={<DollarSign className="h-4 w-4" />}
           />
         </div>
+
+        {/* CSV Data Display */}
+        <CsvDataDisplay />
 
         {/* Main Dashboard Content */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
