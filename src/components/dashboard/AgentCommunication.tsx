@@ -118,7 +118,7 @@ export function AgentCommunication({ messages: initialMessages }: AgentCommunica
         <ScrollArea className="h-[300px]">
           <div className="space-y-4">
             {messages.map((msg) => (
-              <Alert key={msg.id} variant="outline" className="py-2">
+              <Alert key={msg.id} className="py-2">
                 <div className="flex items-start space-x-2">
                   <AlertCircle className={`h-4 w-4 ${
                     msg.status === "pending" ? "text-amber-500" : 
