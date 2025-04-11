@@ -5,7 +5,7 @@ import { DataTable } from "@/components/inventory/DataTable";
 import { Button } from "@/components/ui/button";
 import { Plus, Download, Upload, RefreshCw } from "lucide-react";
 import { mockInventoryData } from "@/services/mockData";
-import { columns } from "@/components/inventory/columns";
+import { columns, InventoryItem } from "@/components/inventory/columns";
 
 const Inventory = () => {
   return (
@@ -43,7 +43,7 @@ const Inventory = () => {
             <CardTitle>Inventory Items</CardTitle>
           </CardHeader>
           <CardContent>
-            <DataTable columns={columns} data={mockInventoryData} />
+            <DataTable columns={columns} data={mockInventoryData as InventoryItem[]} />
           </CardContent>
         </Card>
       </div>
